@@ -68,3 +68,5 @@ The agent is deployed on Smartly Infra and is being tested and improved through 
 - Additional research tools where appropriate.
 - Better handling of failed web searches.
 - More robust evaluation using a fixed test-question set.
+- Files are in zip folder.
+- Further changes to be made.
