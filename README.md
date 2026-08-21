@@ -1,72 +1,61 @@
-# AI Tech Researcher
+# AI-Tech-Researcher
 
-An AI research agent built on Smartly Infra to research and summarize AI and technology topics using external web sources.
+AI-Tech-Researcher is a deployed Smartly agent designed to research and summarize AI and technology topics using reliable external sources.
 
-## Overview
+## Features
 
-The agent is designed to:
-- Research a given AI or technology topic.
-- Use reliable external sources when current or source-backed information is needed.
-- Organize findings into a clear, readable structure.
-- Explain key concepts, applications, advantages, disadvantages, and limitations.
-- Compare models or approaches when requested.
-- End with a concise summary.
+- Researches AI and technology topics.
+- Uses external web search when current information is required.
+- Organizes information into clear sections.
+- Provides key concepts, applications, advantages, and limitations.
+- Mentions sources when external information is used.
+- Handles web-search failures using a fallback approach.
+- Produces concise and structured Markdown responses.
 
 ## Workflow
 
-```text
-User Question
-     ↓
-Web Search
-     ↓
-Find Relevant Sources
-     ↓
-Synthesize Findings
-     ↓
-Structured Answer
-     ↓
-Summary
-```
+The agent follows a simple research workflow:
 
-## Build
+Search → Analyse → Summarize
 
-- Platform: Smartly Infra
-- Agent type: Research
-- Agent name: AI Tech Researcher
-- Primary tool: Web Search
-- Workflow steps: Search → Summarize
-- Advanced mode: Enabled
+1. Search
+   - Finds relevant and reliable external sources.
 
-## Example Use Cases
+2. Analyse
+   - Reviews and organizes the retrieved information.
+   - Evaluates source relevance and reliability.
 
-- Explain technical concepts such as DSA, SDLC, AI, ML, and cloud computing.
-- Compare software development models.
-- Research recent technology developments.
-- Summarize technical topics in a structured format.
-- Explain advantages, disadvantages, and practical applications.
+3. Summarize
+   - Generates a structured answer.
+   - Includes relevant sources and uncertainty where necessary.
 
-## Improvements
+## Documentation
 
-The agent was iteratively improved by:
-1. Adding a structured response format.
-2. Making advantages and disadvantages explicit requirements.
-3. Requiring a final summary.
-4. Improving the search workflow.
-5. Testing the agent with repeated technical questions.
-6. Refining prompts when the agent produced incomplete answers.
+Detailed project documentation is available in the `docs` folder:
 
-## Current Status
+- `system-prompt.md` — System instructions and response guidelines.
+- `workflow.md` — Research workflow and source handling.
+- `testing.md` — Test cases and testing results.
+- `improvements.md` — Project improvements and future enhancements.
 
-The agent is deployed on Smartly Infra and is being tested and improved through versioned configurations.
+## Current Limitations
 
-> Note: This repository documents the agent, prompts, workflow, and testing approach. The hosted Smartly Infra configuration itself is not source code and is not reproduced here.
+- External web search may occasionally be unavailable.
+- Current information cannot be externally verified when the search service fails.
+- Additional testing is required for complex multi-source research questions.
 
 ## Future Improvements
 
-- Better source prioritization and verification.
-- More detailed output schemas.
-- Additional research tools where appropriate.
-- Better handling of failed web searches.
-- More robust evaluation using a fixed test-question set.
-- Files are in zip folder.
-- Further changes to be made.
+- Improve web-search reliability.
+- Improve source ranking and evaluation.
+- Improve citation handling.
+- Add more complex test cases.
+- Improve response consistency.
+
+## Project Status
+
+Active development — the agent is being continuously tested and improved.
+
+## Summary
+
+AI-Tech-Researcher combines structured prompting, external research, source evaluation, and response synthesis to provide clear and reliable AI and technology research.
