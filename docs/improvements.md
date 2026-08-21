@@ -1,62 +1,73 @@
 # Improvements
 
-## Version 1 — Initial Agent
+## Version History
 
-- Created the AI Tech Researcher agent.
-- Defined the primary goal of researching and summarizing AI and technology topics.
-- Added web search as an external research capability.
-- Created a basic research and summarization workflow.
+### v1 — Initial Agent
+- Created the initial AI Tech Researcher agent.
+- Defined the primary research and summarization goal.
+- Added web search capability.
 
-## Version 2 — Response Structure
+### v2 — Research Workflow
+- Improved the basic research workflow.
+- Added source retrieval and summarization steps.
 
-- Improved the system prompt to produce structured responses.
-- Added clear headings and bullet points.
-- Added a short introduction at the beginning of responses.
-- Added a Summary section at the end of responses.
-- Added Markdown formatting requirements.
+### v3 — Response Structure
+- Improved the structure of generated responses.
+- Added clearer organization of research findings.
 
-## Version 3 — Technical Accuracy
+### v4 — Source Handling
+- Improved handling of external sources.
+- Added emphasis on reliable and relevant sources.
 
-- Added instructions to prioritize technical accuracy.
-- Added standard terminology for time and space complexity.
-- Added guidance to avoid incorrect descriptions such as calling linked-list access random access.
-- Added instructions to clearly mention uncertainty when evidence is weak.
+### v5 — Research Quality
+- Improved research accuracy and synthesis of findings.
+- Added better handling of relevant information.
 
-## Version 4 — Source Handling
+### v6 — Response Improvements
+- Improved response formatting and readability.
+- Added clearer organization of technical information.
 
-- Improved instructions for selecting reliable external sources.
-- Added preference for official documentation, research papers, universities, government sources, and established technical organizations.
-- Added instructions to mention sources when external information is used.
-- Added guidance to distinguish current information from general technical knowledge.
+### v7 — Structured Research
+- Improved the research process and output structure.
+- Added better separation of research findings.
 
-## Version 5 — Workflow Improvements
+### v8 — Search Improvements
+- Improved external source search instructions.
+- Refined how relevant sources are identified.
 
-- Organized the research process into three main stages:
-  - Search
-  - Analyse
-  - Summarize
-- Added source evaluation before synthesizing findings.
+### v9 — Response Formatting
+- Improved response formatting and structure.
+- Added clearer instructions for presenting findings.
+
+### v10 — Instruction Following
+- Improved adherence to system instructions.
+- Refined response behavior and formatting requirements.
+
+### v11 — System Prompt Refinement
+- Expanded system prompt instructions.
+- Added technical accuracy and uncertainty handling.
+
+### v12 — Research and Response Improvements
+- Improved source handling and response generation.
+- Refined instructions for structured technical answers.
+
+### v13 — Current Version
+- Improved system prompt and response instructions.
+- Added stronger requirements for complete and structured responses.
+- Improved technical accuracy guidelines.
 - Added fallback behavior when web search is unavailable.
-
-## Version 6 — Testing and Reliability
-
-- Added test cases for general technical questions.
-- Added comparison-question testing.
-- Added web-search failure testing.
-- Added fallback testing for questions that do not require current information.
-- Improved instructions to ensure responses are completed without stopping in the middle of a section.
 
 ## Current Limitations
 
 - External web search may occasionally be unavailable.
 - Current information cannot be externally verified when the search service fails.
-- More testing is required for complex research questions and multiple-source synthesis.
+- More testing is required for complex multi-source research questions.
 
 ## Future Improvements
 
-- Improve web-search reliability and error handling.
-- Test the agent with more complex AI and technology topics.
-- Improve source ranking and source-quality evaluation.
-- Improve citation and reference handling.
-- Add more edge-case and failure-condition tests.
-- Improve response consistency across different types of questions.
+- Improve web-search reliability.
+- Improve source ranking and evaluation.
+- Improve citation handling.
+- Add more complex test cases.
+- Improve response consistency.
+- Continue refining the agent through future versions.
